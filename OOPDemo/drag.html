@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>OOP编程--拖拽效果</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 120px;
+			height: 120px;
+			background-color: lightpink;
+			position: absolute;
+		}
+	</style>
+</head>
+<body>
+	<div id="box"></div>
+
+	<script type="text/javascript">
+		window.onload = function() {
+			var drag = new Drag("box");
+			drag.Init();
+		}
+
+		//构造函数
+		function Drag(id) {
+			this.obj = document.getElementById(id);
+			this.disX = 0;//div起点到mousedown鼠标位置差
+			this.disY = 0;
+		}
+		Drag.prototype.Init = function(e) {
+			var _this = this;
+			this.obj.onmousedown = function(e) {
+				var e = e || window.event;
+				_this.mouseDown(e);
+				return false;
+			}
+		}
+		Drag.prototype.mouseDown = function(e) {
+			var _this = this;
+			this.disX = e.clientX - this.obj.offsetLeft;
+			this.disY = e.clientY - this.obj.offsetTop;
+			document.onmousemove = function(e) {
+				var e = e || window.event;
+				_this.mouseMove(e);
+			}
+			document.onmouseup = function() {
+				_this.mouseUp();
+			}
+
+		}
+		Drag.prototype.mouseMove = function(e) {
+			var e = e || window.event;
+			this.obj.style.left = e.clientX - this.disX + "px";
+			this.obj.style.top = e.clientY - this.disY + "px"; 
+		}
+		Drag.prototype.mouseUp = function() {
+			document.onmousemove = null;
+			document.onmouseup = null;
+		}
+	</script>
+</body>
+</html>

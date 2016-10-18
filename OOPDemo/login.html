@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>登录注册遮罩层</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#loginBtn{
+			position: absolute;
+			margin: 0 auto;
+			left: 50%;
+			top: 50%;
+			margin-left: -50px;
+			margin-top: -15px;
+			width: 100px;
+			height: 30px;
+			line-height: 30px;
+			font-weight: bold;
+			color: #fff;
+			background-color: #999;
+			border-radius: 5px;
+			text-align: center;
+			cursor: pointer;
+			/*display: none;*/
+		}
+		#bg{
+			width: 100%;
+			height: 2000px;
+			background-color: rgba(0,0,0,0.2);
+		}
+		#wrap{
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			margin-left: -160px;
+			margin-top: -230px;
+			width: 320px;
+			height: 360px;
+			background-color: #fff;
+			border-radius: 10px;
+		}
+		#clickDot{
+			position: absolute;
+			right: 10px;
+			top: 10px;
+			animation: scale 2s linear infinite;
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			background-color: lightblue;
+			border-radius: 50%;
+			cursor: pointer;
+		}
+		@keyframes scale {
+			from { background: lightblue; }
+			50% { background: darkgreen; }
+			to { background: lightblue; }
+		}
+		@-webkit-keyframes scale {
+			from { background: lightblue; }
+			50% { background: darkgreen; }
+			to { background: lightblue; }
+		}
+	</style>
+</head>
+<body>
+	<div id="loginBtn">click me!</div>
+	<script type="text/javascript">
+	/*
+	*窗口重置的时候存在问题，bg的高度定死，不能根据窗口大小改变而变化；该函数需要封装，并设置窗口缩放事件触发重置
+	*/
+		window.onload = function() {
+			//
+			var oBtn = document.getElementById("loginBtn");
+			var cHeight = document.documentElement.clientHeight;
+
+			//显示遮罩层
+			function show() {
+				//遮罩层
+				var bg = document.createElement("div");
+				bg.id = "bg";
+				bg.style.height = cHeight + "px";
+				document.body.appendChild(bg);
+
+				//登录框
+				var wrap = document.createElement("div");
+				wrap.id = "wrap";
+				wrap.innerHTML = "<span id='clickDot'></span>";
+				document.body.appendChild(wrap);
+
+				//获取元素
+				var bg = document.getElementById("bg");
+				var wrap = document.getElementById("wrap");
+				var clickDot = document.getElementById("clickDot");
+
+				clickDot.onclick = close;
+
+				//关闭遮罩层
+				function close() {
+					document.body.removeChild(bg);
+					document.body.removeChild(wrap);
+				};
+			};
+			oBtn.onclick = show;			
+		}
+	</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>360度图片旋转效果</title>
+	<style type="text/css" media="screen">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		img{
+			width: 140px;
+			height: 110px;
+			position: absolute;
+		}
+		.wrap{
+			width: 100px;
+			margin: 100px auto 0;
+			-webkit-perspective: 800px;	
+			position: relative;
+		}
+		#content{
+			height: 110px;
+			-webkit-transform-style: preserve-3d; 
+			transition: 2s;
+			cursor: pointer;
+		}
+		/*图片旋转*/
+		img:nth-child(1){
+			transform: rotateY(0deg) translateZ(220px);
+		}
+		img:nth-child(2){
+			transform: rotateY(40deg) translateZ(220px);
+		}
+		img:nth-child(3){
+			transform: rotateY(80deg) translateZ(220px);
+		}
+		img:nth-child(4){
+			transform: rotateY(120deg) translateZ(220px);
+		}
+		img:nth-child(5){
+			transform: rotateY(160deg) translateZ(220px);
+		}
+		img:nth-child(6){
+			transform: rotateY(200deg) translateZ(220px);
+		}
+		img:nth-child(7){
+			transform: rotateY(240deg) translateZ(220px);
+		}
+		img:nth-child(8){
+			transform: rotateY(280deg) translateZ(220px);
+		}
+		img:nth-child(9){
+			transform: rotateY(320deg) translateZ(220px);
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<div id="content">
+			<img src="../img/carrousel/01.jpg" alt="">
+			<img src="../img/carrousel/02.jpg" alt="">
+			<img src="../img/carrousel/03.jpg" alt="">
+			<img src="../img/carrousel/04.jpg" alt="">
+			<img src="../img/carrousel/05.jpg" alt="">
+			<img src="../img/carrousel/06.jpg" alt="">
+			<img src="../img/carrousel/07.jpg" alt="">
+			<img src="../img/carrousel/08.jpg" alt="">
+			<img src="../img/carrousel/09.jpg" alt="">			
+		</div>
+	</div>
+	<script type="text/javascript">
+		var content = document.getElementById("content");
+		var angel = 40;
+
+		var time = setInterval(function() {
+			content.style.transform = "rotateY("+angel+"deg)";
+			angel+=40
+		},4000);
+	</script>
+</body>
+</html>

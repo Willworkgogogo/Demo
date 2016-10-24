@@ -1,0 +1,10 @@
+.main{
+	width: 1000px;
+	height: 400px;
+	background-color: lightgreen;
+	text-align: center;
+	line-height: 400px;
+	font-size: 75px;
+	color: #fff;
+	margin: 0 auto;
+}

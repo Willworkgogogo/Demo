@@ -1,0 +1,67 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "rbJzKkkLXx3KmAo3e+cODbJw4B8=",
+			"path": "github.com/flosch/pongo2",
+			"revision": "7f5515449ea9bbeb00256d9cbb654c556e7d0146",
+			"revisionTime": "2016-03-15T18:30:58Z"
+		},
+		{
+			"checksumSHA1": "dL4SeE0La6z1wbKNnzaVza55fYc=",
+			"path": "github.com/gin-gonic/gin",
+			"revision": "4a6bc4aac4607e253bcda67c8c5bcda693d2388e",
+			"revisionTime": "2016-03-14T11:55:50Z"
+		},
+		{
+			"checksumSHA1": "K1Mer2VJBxUkYdE896+WZLOz6A8=",
+			"path": "github.com/gin-gonic/gin/binding",
+			"revision": "4a6bc4aac4607e253bcda67c8c5bcda693d2388e",
+			"revisionTime": "2016-03-14T11:55:50Z"
+		},
+		{
+			"checksumSHA1": "Aymn5jKrmjk/CYi6EqPEFK4st6Y=",
+			"path": "github.com/gin-gonic/gin/render",
+			"revision": "4a6bc4aac4607e253bcda67c8c5bcda693d2388e",
+			"revisionTime": "2016-03-14T11:55:50Z"
+		},
+		{
+			"checksumSHA1": "UQtJP2n/HEBhHaq6a9R2hCHgy+8=",
+			"path": "github.com/golang/protobuf/proto",
+			"revision": "8d92cf5fc15a4382f8964b08e1f42a75c0591aa3",
+			"revisionTime": "2016-03-18T18:57:00Z"
+		},
+		{
+			"checksumSHA1": "b0T0Hzd+zYk+OCDTFMps+jwa/nY=",
+			"path": "github.com/manucorporat/sse",
+			"revision": "ee05b128a739a0fb76c7ebd3ae4810c1de808d6d",
+			"revisionTime": "2016-01-26T18:01:36Z"
+		},
+		{
+			"checksumSHA1": "Rov8OnFSQbNOiTd/DrsLA7+g82M=",
+			"path": "github.com/robvdl/pongo2gin",
+			"revision": "53b54ca1f64e50039f69d2517edd1b82e7ecb100",
+			"revisionTime": "2015-09-29T09:08:01Z"
+		},
+		{
+			"checksumSHA1": "Jp9QMmMfGOXW9KxYl8vTQrg5IOo=",
+			"path": "github.com/smmit/smmbase/config_reader",
+			"revision": "83564b79383ce97957854987ddd491e4f4a045b2",
+			"revisionTime": "2016-09-07T08:54:59Z"
+		},
+		{
+			"checksumSHA1": "9jjO5GjLa0XF/nfWihF02RoH4qc=",
+			"path": "golang.org/x/net/context",
+			"revision": "28d1bd4fbe7e56c9025ffe3a89113fa4f5e48f31",
+			"revisionTime": "2016-07-30T20:25:50Z"
+		},
+		{
+			"checksumSHA1": "9+TP2NPlTWXoRndq02uwZW26AqI=",
+			"path": "gopkg.in/go-playground/validator.v8",
+			"revision": "014792cf3e266caff1e916876be12282b33059e0",
+			"revisionTime": "2016-02-23T20:26:51Z"
+		}
+	],
+	"rootPath": "haveatry"
+}

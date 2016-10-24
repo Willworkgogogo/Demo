@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>边框三角形</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;		
+		}
+		h2{
+			width: 300px;
+			margin: 0 auto;
+		}
+		.demo1{
+			width: 300px;
+			height: 100px;
+			border: 1px solid red;
+			margin: 50px auto;
+		}
+		.demo1 em,.demo1 span{
+			display: block;
+			width: 30px;
+			height: 16px;
+			font-size: 30px;
+			overflow: hidden;
+		}
+		.demo1 em{
+			margin-top: -16px;
+			color: red;
+			font-style: normal;
+		}
+		.demo1 span{
+			margin-top: -14px;
+			color: #fff;
+		}
+		
+		.demo2{
+			width: 300px;
+			height: 100px;
+			border: 1px solid #F00;
+			margin: 50px auto;
+			position: relative;
+		}
+		.demo2 em, .demo2 span{
+			display: block;
+			width: 30px;
+			height: 16px;
+			font-size: 30px;
+			position: absolute;
+			top: 35px;
+		}
+		.demo2 em{
+			left: -15px;
+			color: red;
+			font-style: normal;
+		}
+		.demo2 span{
+			left: -13px;
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<h2>用margin方法</h2>
+	<div class="demo1">
+		<em>&#9670;</em>
+		<span>&#9670;</span>
+	</div>
+	
+	<h2>用position方法</h2>
+	<div class="demo2">
+		<em>&#9670;</em>
+		<span>&#9670;</span>
+	</div>
+</body>
+</html> 
+
+
+
+
+
+
+
+
+
+
+
+

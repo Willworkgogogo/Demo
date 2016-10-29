@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>不间断轮播</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.wrap{
+			width: 800px;
+			height: 160px;
+			padding: 20px 0px;
+			border: 3px solid #666;
+			box-shadow: 5px 5px 5px #666;
+			border-radius: 5px; 
+			overflow: hidden;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			margin: auto;
+		}
+		.innerWrap{
+			width: 1500px;
+			list-style: none;
+		}
+		.innerWrap li{
+			float: left;
+			width: 180px;
+			height: 160px;
+			margin-right: 10px;
+			border: 1px solid #333;
+			border-radius: 5px;
+			font-size: 50px;
+			font-weight: bold;
+			text-align: center;
+			line-height: 160px;
+			color: darkred;
+			background: blue;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<ul class="innerWrap">
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+			<li>4</li>
+			<li>5</li>
+		</ul>
+	</div>
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		window.onload = function() {
+			var innerWrap = $(".innerWrap");
+			function roll() {
+				innerWrap.animate({
+					marginLeft: "-192px"},
+					2000, "linear", function() {
+					innerWrap.css({marginLeft: "0px"});
+					$(".innerWrap li:first").remove().clone(true).appendTo('.innerWrap');
+				});
+			}
+			setInterval(roll,2000);
+			console.log($(".innerWrap li:first"))
+		}
+	</script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

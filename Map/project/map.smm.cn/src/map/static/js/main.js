@@ -10,7 +10,9 @@
 			$listCompare_wrap : $('.listCompare_wrap'),
 			$smm_map_rightCompare : $('.smm_map_rightCompare'),
 			$smm_map_listTitle_listFirst:$('.smm_map_listTitle .list_first'),
-			$contentInput : $('.smm_map_content_innerWrap .list_first input')
+			$contentInput : $('.smm_map_content_innerWrap .list_first input'),
+			rightBtn : $('.rightButtonToggle'),
+
 		}
 		map.$map_subnav_title_li.on({
 			'mouseover': function(){
@@ -131,9 +133,7 @@
 			map.$listItem_info.removeClass('listItem_selected');
 		})
 
-		//隔行变色
-		$('.smm_map_content_innerWrap .smm_map_content_listUl:even').css('background', '#fff');
-		$('.smm_map_content_innerWrap .smm_map_content_listUl:odd').css('background', '#fafafa');
+
 	/*右侧对比栏列表*/
 		//初始定位高度
 		$('.rightCompare_wrap').css({'top': $('.smm_map_listItem').offset().top+'px','display':'block'});
@@ -145,13 +145,13 @@
 		var onOff = 1;
 		$('.rightButtonToggle').on('click', function(){
 			if (onOff == 1) {
-				$('.smm_map_rightCompare').stop(true,true).animate({'left': 0}, 500, function(){
-					$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) -12px 0 no-repeat');
+				map.$smm_map_rightCompare.stop(true,true).animate({'left': 0}, 500, function(){
+					map.rightBtn.css('background','url(./static/img/button_arrow.png) -12px 0 no-repeat');
 				});
 				onOff = 2;
 			} else {
-				$('.smm_map_rightCompare').stop(true,true).animate({'left': 162}, 500, function(){
-					$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) no-repeat');
+				map.$smm_map_rightCompare.stop(true,true).animate({'left': 162}, 500, function(){
+					map.rightBtn.css('background','url(./static/img/button_arrow.png) no-repeat');
 				});
 				onOff = 1;
 			}
@@ -170,6 +170,8 @@
 			$(this).removeAttr('checked');
 		});	
 
+	/*页面刷新隔行变色*/
+		oddEven();
 	/*对比栏删除按钮功能实现*/
 		$('.smm_map_rightCompare_innerWrap').on('click', function(event){
 
@@ -189,16 +191,18 @@
 						
 						//从数组中删除该元素；
 						map_company.splice(i, 1);
+						
 					}
 				}
 				if (onOff == 2 && map_company.length == 0) {
-					$('.smm_map_rightCompare').stop(true,true).animate({'left': 162}, 500, function(){
-						$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) no-repeat')
+					map.$smm_map_rightCompare.stop(true,true).animate({'left': 162}, 500, function(){
+						map.rightBtn.css('background','url(./static/img/button_arrow.png) no-repeat')
 					});
 					onOff = 1;
 				}
 			refreshCompare();
 			refreshComparePage();
+			oddEvenCompare();
 			}
 
 			//对比
@@ -210,6 +214,7 @@
 				map.$listItem_compare.addClass('listItem_selected');
 				map.$listItem_info.removeClass('listItem_selected');
 				refreshComparePage();
+				oddEvenCompare();
 			}
 
 			//清空对比栏
@@ -219,8 +224,8 @@
 				checkboxReset();
 				refreshComparePage();
 				if (onOff == 2 && map_company.length == 0) {
-					$('.smm_map_rightCompare').stop(true,true).animate({'left': 162}, 500, function(){
-						$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) no-repeat')	
+					map.$smm_map_rightCompare.stop(true,true).animate({'left': 162}, 500, function(){
+						map.rightBtn.css('background','url(./static/img/button_arrow.png) no-repeat')	
 					});
 					onOff = 1;
 				}
@@ -229,8 +234,8 @@
 		})
 		// 隐藏按钮
 		$('.rightCompare_hide').on('click', function(){
-			$('.smm_map_rightCompare').stop(true,true).animate({'left': 162}, 500, function(){
-				$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) no-repeat')
+			map.$smm_map_rightCompare.stop(true,true).animate({'left': 162}, 500, function(){
+				map.rightBtn.css('background','url(./static/img/button_arrow.png) no-repeat')
 			});
 			onOff = 1;
 		})
@@ -344,6 +349,17 @@
 			};
 		}
 
+		//隔行变色
+		function oddEven(){
+			$('.smm_map_content_listUl:even').css('background', '#fff');
+			$('.smm_map_content_listUl:odd').css('background', '#fafafa');
+		}
+		function oddEvenCompare(){
+			$('.listCompare_content .smm_map_content_listUl:even').css('background', '#fff');
+			$('.listCompare_content .smm_map_content_listUl:odd').css('background', '#fafafa');
+			console.log($('.listCompare_content .smm_map_content_listUl:odd'))
+			console.log($('.listCompare_content .smm_map_content_listUl:even'))
+		}
 	/*分页部分*/
 	$(".paginationWrap").createPage({
         pageCount:100,

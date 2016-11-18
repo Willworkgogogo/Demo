@@ -1,0 +1,316 @@
+{
+  "catogary" : "电池材料",
+  "max" : 1000,
+  "code": 100000,
+  "message": "成功",
+  "mapdata" : [
+                {"name": "北京","value": 1000},
+                {"name": "天津","value": 899},
+                {"name": "上海","value": 322},
+                {"name": "重庆","value": 200},
+                {"name": "河北","value": 455},
+                {"name": "河南","value": 1234},
+                {"name": "云南","value": 122},
+                {"name": "辽宁","value": 455},
+                {"name": "黑龙江","value": 666},
+                {"name": "湖南","value": 211},
+                {"name": "安徽","value": 333},
+                {"name": "山东","value": 444},
+                {"name": "新疆","value": 555},
+                {"name": "江苏","value": 213},
+                {"name": "浙江","value": 423},
+                {"name": "江西","value": 123},
+                {"name": "湖北","value": 123},
+                {"name": "广西","value": 123},
+                {"name": "甘肃","value": 4432},
+                {"name": "山西","value": 123},
+                {"name": "内蒙古","value": 134},
+                {"name": "陕西","value": 123},
+                {"name": "吉林","value": 244},
+                {"name": "福建","value": 677},
+                {"name": "贵州","value": 123},
+                {"name": "广东","value": 423},
+                {"name": "青海","value": 9877},
+                {"name": "西藏","value": 545},
+                {"name": "四川","value": 789},
+                {"name": "宁夏","value": 123},
+                {"name": "海南","value": 234},
+                {"name": "台湾","value": 244},
+                {"name": "香港","value": 455},
+                {"name": "澳门","value": 888}
+            ],
+  "data": [
+    {
+      "company_info": {
+        "id": 1,
+        "province": "新疆",
+        "city": "格尔木市",
+        "name": "新疆中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    },
+    {
+      "company_info": {
+        "id": 2,
+        "province": "青海",
+        "city": "兰州市",
+        "name": "青海中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    },
+    {
+      "company_info": {
+        "id": 3,
+        "province": "山西",
+        "city": "运城",
+        "name": "山西中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    },
+    {
+      "company_info": {
+        "id": 4,
+        "province": "上海",
+        "city": "上海市",
+        "name": "上海中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    },
+    {
+      "company_info": {
+        "id": 5,
+        "province": "广东",
+        "city": "广州市",
+        "name": "广东中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    },
+    {
+      "company_info": {
+        "id": 6,
+        "province": "安徽",
+        "city": "黄山市",
+        "name": "安徽中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    },
+    {
+      "company_info": {
+        "id": 7,
+        "province": "北京",
+        "city": "朝阳区",
+        "name": "北京中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    },
+    {
+      "company_info": {
+        "id": 8,
+        "province": "云南",
+        "city": "昆明",
+        "name": "云南中信国安科技发展有限公司",
+        "address": "青海省格尔木市",
+        "security_status": 0,
+        "security_code": "",
+        "mine_info": "西台吉尔乃盐湖"
+      },
+      "product_infos": [
+        {
+          "id": 2,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产量",
+          "product_id": 22,
+          "quantity": null,
+          "unit": null,
+          "additional_info": null
+        },
+        {
+          "id": 4,
+          "company_id": 2,
+          "date": "2015-01-01",
+          "type": "产能",
+          "product_id": 24,
+          "quantity": 18000,
+          "unit": "吨",
+          "additional_info": null
+        }
+      ]
+    }
+  ]
+}

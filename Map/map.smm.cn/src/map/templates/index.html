@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="上海有色金属网,长江有色金属网,价格走势,有色新闻,行情分析,热点新闻,有色周报,金属日评,期货交易,现货投资," />
+    <meta name="description" content="上海有色网(原上海有色金属网),提供有色金属期/现货交易信息.有色金属现货价格的风向标,品种涵盖铜,铝,铅,锌,锡,镍,小金属,稀贵,黄金白银等,是有色金属行业的门户网站,点击率居世界有色网站之前列."
+    />
+	<title>有色地图</title>
+	<link rel="shortcut icon" type="image/x-icon" href="http://www.smm.cn/favicon.ico" />
+	<link rel="stylesheet" type="text/css" href="{{static.UrlPrefix}}{{static.Version}}/css/base.css">
+</head>
+<body>
+	<div class="header_top"></div>
+	<!-- headernav -->
+	<header>
+		<div class="map_header layout bg-white">
+			<div class="smm_logo">
+				<a href="##">
+					<img src="{{static.UrlPrefix}}{{static.Version}}/img/smm_map_logo.png">
+				</a></div>
+			<div class="map_title">
+				<span>新能源</span>
+			</div>
+		</div>		
+	</header>
+	<!-- 二级菜单、地图 -->
+	<div class="nav_map_wrap layout">
+		<div class="map_subnav">
+			<ul class="map_subnav_title">
+				<li><span>矿和盐</span><i></i>
+					<ul class="map_subnav_title_subnav">
+						<li>锂矿</li>
+						<li>镍矿</li>
+						<li>硫酸镍</li>
+					</ul>
+				</li>
+				<li><span>四大材料</span><i></i>
+					<ul class="map_subnav_title_subnav">
+						<li>锂矿2</li>
+						<li>镍矿2</li>
+						<li>硫酸镍2</li>
+					</ul>
+				</li>
+				<li><span>电池</span></li>
+				<li><span>终端</span><i></i>
+					<ul class="map_subnav_title_subnav">
+						<li>锂矿3</li>
+						<li>镍矿3</li>
+						<li>硫酸镍3</li>
+					</ul>
+				</li>
+			</ul>
+			<ul class="map_subnav_tips">
+				<li>三元材料</li>
+				<li>磷酸铁锂</li>
+				<li>硅碳负极</li>
+				<li>六氟磷酸锂</li>
+				<li>干法隔膜</li>
+				<li>湿法隔膜</li>
+				<li>乘用车</li>
+				<li>客车</li>
+			</ul>
+		</div><!-- /.map_subnav -->
+		<div class="map_echarts">
+			<div id="smm_map_echarts"></div>
+		</div><!-- /.map_echarts -->
+	</div><!-- /.wrap -->
+
+	<!-- 路径导航显示 -->
+	<!-- <div class="smm_map_location layout">
+		<span>矿和盐</span>
+		>
+		<span>锂矿</span>
+		>
+		<span>福建</span>
+	</div> --><!-- /.location -->
+
+	<!-- 对比列表 -->
+	<div class="smm_map_listItem layout">
+		<span class="listItem_info listItem_selected">企业信息</span>
+		<span class="listItem_compare">企业对比</span>
+	</div>
+
+
+	<!-- 列表详情 -->
+	<div class="listWrap_content layout">
+		<!-- 信息页 -->
+		<div class="listInfo_wrap">
+			<ul class="smm_map_listTitle">
+				<li class="list_first">对比</li>
+				<li class="list_second">省份/城市</li>
+				<li class="list_third">企业名称</li>
+				<li class="list_fourth">企业地址</li>
+				<li class="list_fifth">上市情况</li>
+				<li class="list_sixth">产品类型</li>
+				<li class="list_seventh">
+					<div>
+						<p>2015</p>
+						<p>年产量</p>
+						<p>(吨)</p>
+					</div>
+					<span class="listInfo_sortBtnBox1">
+						<i class="btnTop"></i>
+						<i class="btnDown"></i>
+					</span>
+				</li>
+				<!-- 增加 附加列 -->
+				<li class="list_seventh_next">
+					附加信息
+				</li>
+				<li class="list_eighth">
+					<div>
+						<p>2015</p>
+						<p>年产能</p>
+						<p>(吨)</p>
+					</div>
+					<span class="listInfo_sortBtnBox2">
+						<i class="btnTop"></i>
+						<i class="btnDown"></i>
+					</span>
+				</li>
+				<li class="list_eighth_next">
+					附加信息
+				</li>
+				<li class="list_ninth">
+					<div>
+						<p>2016</p>
+						<p>年扩建计划</p>
+						<p>(万平米)</p>
+					</div>					
+				</li>
+				<li class="list_ten">
+					<div>
+						<p>2017</p>
+						<p>年扩建计划</p>
+						<p>(万平米)</p>
+					</div>	
+				</li>
+				<!-- <li class="list_eleven">附加信息</li> -->
+			</ul>
+			<div class="smm_map_content_innerWrap">
+				<ul class="smm_map_content_listUl" hello="1">	
+					<li class="list_first">
+						<input type="checkbox" name="">
+					</li>
+					<li class="list_second">
+						<div>
+							<p>广东省</p>
+							<p>深圳市</p>	
+						</div>	
+					</li>
+					<li class="list_third">
+						<div class="listItems_subwrap">
+							<div>深圳市星源材料科技股份有限公司1</div>
+						</div>
+					</li>
+					<li class="list_fourth">
+						<div class="listItems_subwrap">
+							<div>珠海市高栏港经济区南水镇南化二路2号质检楼第一、二层</div>
+						</div>
+					</li>
+					<li class="list_fifth">
+						<div class="listItems_subwrap">
+							<div>
+								<p>A股上市</p>
+								<p>(002108)</p>
+							</div>
+						</div>
+					</li>
+					<li class="list_sixth">
+						<div class="listItems_subwrap">
+							<div>干法隔膜、湿法隔膜</div>
+						</div>
+					</li>
+					<li class="list_seventh">
+						N/A
+					</li>
+					<li class="list_seventh_next">
+						<div class="listItems_subwrap">
+							<div>附加信息附加信息附加信息</div>
+						</div>
+					</li>
+					<li class="list_eighth">
+						<span>20000</span>
+					</li>
+					<li class="list_eighth_next">
+						<div class="listItems_subwrap">
+							<div>附加信息</div>
+						</div>
+					</li>
+					<li class="list_ninth">
+						<span>60000</span>
+					</li>
+					<li class="list_ten">
+						<div class="listItems_subwrap">
+							<div>干法隔膜5000、湿法隔膜5000</div>
+						</div>
+					</li>
+				</ul>
+							
+							
+			</div><!-- /.smm_map_content_innerWrap -->
+			<!-- 分页 -->
+			<div class="smm_map_pagination">
+				<div class="paginationWrap"></div>
+			</div>			
+		</div><!-- /.listInfo_wrap -->
+		
+		<!-- 对比页 -->
+		<div class="listCompare_wrap">
+			<ul class="smm_map_listTitle">
+				<li class="list_first">对比</li>
+				<li class="list_second">省份/城市</li>
+				<li class="list_third">企业名称</li>
+				<li class="list_fourth">企业地址</li>
+				<li class="list_fifth">上市情况</li>
+				<li class="list_sixth">产品类型</li>
+				<li class="list_seventh">
+					<div>
+						<p>2015</p>
+						<p>年产量</p>
+						<p>(吨)</p>
+					</div>
+					<span class="listCompare_sortBtnBox1">
+						<i class="btnTop"></i>
+						<i class="btnDown"></i>
+					</span>
+				</li>
+				<!-- 增加 附加列 -->
+				<li class="list_seventh_next">
+					附加信息
+				</li>
+				<li class="list_eighth">
+					<div>
+						<p>2015</p>
+						<p>年产能</p>
+						<p>(吨)</p>
+					</div>
+					<span class="listInfo_sortBtnBox2">
+						<button class="btnTop"></button>
+						<button class="btnDown"></button>
+					</span>
+				</li>
+				<li class="list_eighth_next">
+					附加信息
+				</li>
+				<li class="list_ninth">
+					<div>
+						<p>2016</p>
+						<p>年扩建计划</p>
+						<p>(万平米)</p>
+					</div>					
+				</li>
+				<li class="list_ten">
+					<div>
+						<p>2017</p>
+						<p>年扩建计划</p>
+						<p>(万平米)</p>
+					</div>	
+				</li>
+			</ul>
+			<div class="listCompare_content"></div>
+		</div>		
+	</div>
+	
+	<!-- 右侧对比栏 -->
+	<div class="rightCompare_wrap">
+		<div class="rightCompare_outerWrap">
+			<div class="smm_map_rightCompare">
+				<p class="smm_map_rightCompare_title">对比栏
+					<span class="rightCompare_hide">隐藏</span>
+				</p>
+				<div class="smm_map_rightCompare_innerWrap">
+					<div class="rightCompare_listItems">
+						<img src="{{static.UrlPrefix}}{{static.Version}}/img/compare1.png">
+					</div>
+					<div class="rightCompare_listItems">
+						<img src="{{static.UrlPrefix}}{{static.Version}}/img/compare2.png">
+					</div>
+					<div class="rightCompare_listItems">
+						<img src="{{static.UrlPrefix}}{{static.Version}}/img/compare3.png">
+					</div>
+					<div class="rightCompare_listItems">
+						<img src="{{static.UrlPrefix}}{{static.Version}}/img/compare4.png">
+					</div>
+					<div class="rightCompare_listItems">
+						<img src="{{static.UrlPrefix}}{{static.Version}}/img/compare5.png">
+					</div>
+					<div class="rightCompare_bottomBtn">
+						<button class="rightCompare_btnCompare">对比</button>
+						<button class="rightCompare_clearAll">清空对比栏</button>
+					</div>
+				</div>
+				<!-- <button class="rightCompare_toggle">隐藏</button> -->
+			</div>
+		</div>
+		<div class="rightButtonToggle"></div>
+	</div>
+
+
+	
+	<script type="text/javascript" src="{{static.UrlPrefix}}{{static.Version}}/js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="{{static.UrlPrefix}}{{static.Version}}/js/echarts/build/dist/echarts.js"></script>
+	<script type="text/javascript" src="{{static.UrlPrefix}}{{static.Version}}/js/main.js"></script>
+	<script type="text/javascript" src="{{static.UrlPrefix}}{{static.Version}}/js/jquery.page.js"></script>
+</body>
+</html>

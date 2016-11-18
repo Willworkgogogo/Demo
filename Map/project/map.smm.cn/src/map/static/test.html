@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.box{
+			width: 300px;
+			height: 300px;
+			border: 1px solid #000;
+			background: pink;
+			position: relative;
+		}
+		.loadState{
+			width: 150px;
+			height: 150px;
+			line-height: 150px;
+			text-align: center;
+			background: #fff url(img/index.gif) 10px 60px no-repeat;
+			border-radius: 10px;
+			opacity: 0.9;
+			margin: auto;
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 10;
+		}
+	</style>
+</head>
+<body>
+	<div class="box">
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<p>121233eeweweweweqweqwrqwrwq</p>
+		<!-- <div class="loadState">&nbsp;&nbsp;&nbsp;&nbsp;加载中...</div> -->
+	</div><br><br><br><br><br>
+	<button>click me</button>
+	<script type="text/javascript" src="js/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript">
+		var map = {
+			setLoad : function(dom){
+				var div = document.createElement('div');
+				div.className = 'loadState';
+				div.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;加载中...';
+				dom.append(div);
+			},
+
+			removeLoad : function(){
+				$('.loadState').remove('.loadState');
+			}
+		}
+		// function setLoad(dom){
+		// 	var div = document.createElement('div');
+		// 	div.className = 'loadState';
+		// 	div.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;加载中...';
+		// 	dom.append(div);
+		// }
+		map.setLoad($('.box'));
+
+		// function removeLoad(){
+		// 	$('.loadState').remove('.loadState')
+		// }
+		$('button').on('click', function(){
+			map.removeLoad()
+		})
+
+		
+	</script>
+</body>
+</html>

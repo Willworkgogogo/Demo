@@ -1,6 +1,14 @@
- (function(){
- 	window.onload = function(){
-	 	//header_nav
+require.config({
+    paths: {
+        echarts: 'static/js/echarts/build/dist'
+    }
+})
+require(
+    [   
+        'echarts',
+        'echarts/chart/map'
+    ],function(echarts) {
+    	//header_nav
 		var map = {
 			$map_subnav_title_li : $('.map_subnav_title>li'),
 			$map_subnav_title_subnav_li : $('.map_subnav_title_subnav').find('li'),
@@ -12,18 +20,17 @@
 			$smm_map_listTitle_listFirst:$('.smm_map_listTitle .list_first'),
 			$contentInput : $('.smm_map_content_innerWrap .list_first input'),
 			rightBtn : $('.rightButtonToggle'),
-
+			listInfo_output : $('.listInfo_sortBtnBox1'),  //产量
+			listInfo_capacity : $('.listInfo_sortBtnBox2') //产能
 		}
 		map.$map_subnav_title_li.on({
 			'mouseover': function(){
-				// console.log($(this).innerWidth())
 				$(this).children('ul').css({'display': 'block', 'width': $(this).innerWidth()-1+'px'});
 			},
 			'mouseout': function(){
 				$(this).children('ul').css({'display': 'none'});
 			}
 		})
-		// console.log(map.map_subnav_title_subnav_li)
 
 		/*echats*/
 		var smm_charts = echarts.init(document.getElementById('smm_map_echarts'))
@@ -117,6 +124,20 @@
 			};//option
 		smm_charts.setOption(option);
 
+
+		var ecConfig = require('echarts/config');
+		myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
+		    // var selected = param.selected;
+		    // var str = '当前选择： ';
+		    // for (var p in selected) {
+		    //     if (selected[p]) {
+		    //         str += p + ' ';
+		    //     }
+		    // }
+		    console.log(param)
+		})
+
+
 		/*列表*/
 		map.$listItem_info.on('click', function(){
 			map.$smm_map_listTitle_listFirst.css('display', 'block');
@@ -133,6 +154,37 @@
 			map.$listItem_info.removeClass('listItem_selected');
 		})
 
+		/*==========================事件请求===============================*/
+		
+		//二级菜单
+		map.$map_subnav_title_li.each(function(index, el) {
+			// console.log($(this).children('span').text() == '矿和盐')
+			if ($(this).children('span').text() == '矿和盐') {
+				$(this).click(function(event) {
+					$.ajax({
+						url:'test.json',
+						type:'GET',
+						success:function(res){
+							refreshMap(res)
+						}
+					})
+				});
+			} else if($(this).children('span').text() == '电池材料'){
+				$(this).click(function(event) {
+					
+				});
+			}else if($(this).children('span').text() == '电池'){
+				$(this).click(function(event) {
+					
+				});
+			}else if($(this).children('span').text() == '终端'){
+				$(this).click(function(event) {
+					
+				});
+			}
+		});
+
+		/*=========================================================*/
 
 	/*右侧对比栏列表*/
 		//初始定位高度
@@ -247,10 +299,8 @@
 				var html = '';
 				map01.id = $(event.target).parent().parent().attr('hello');//获取企业唯一id
 				map01.name = $(event.target).parent().siblings('.list_third').find('.listItems_subwrap div').text();//企业名称
-				// console.log($(event.target).parent().siblings('.list_third').find('.listItems_subwrap div').text())
 				html = $(event.target).parent().parent().prop('outerHTML');
 				map01.ul = html;//ul
-				// console.log($(event.target).parent().parent().html())
 				var arrayNum = map_company.push(map01);
 
 				if (onOff == 1) {
@@ -354,11 +404,10 @@
 			$('.smm_map_content_listUl:even').css('background', '#fff');
 			$('.smm_map_content_listUl:odd').css('background', '#fafafa');
 		}
+		//对比页隔行变色
 		function oddEvenCompare(){
 			$('.listCompare_content .smm_map_content_listUl:even').css('background', '#fff');
 			$('.listCompare_content .smm_map_content_listUl:odd').css('background', '#fafafa');
-			console.log($('.listCompare_content .smm_map_content_listUl:odd'))
-			console.log($('.listCompare_content .smm_map_content_listUl:even'))
 		}
 	/*分页部分*/
 	$(".paginationWrap").createPage({
@@ -369,8 +418,28 @@
         }
     });
 
+	//map 刷新
+	// option.title.subtext = 'SMM调研数据'
+	// option.dataRange.max = 1000
+	// option.series[0].name = 
+	// option.series[0].data = 
+	function refreshMap(res){
+		option.title.subtext = res.catogary;
+		option.dataRange.max = res.max;
+		option.series[0].name = res.catogary;
+		option.series[0].data = res.data;
+		smm_charts.setOption(option);
+	}
     /*排序功能*/
+    //listInfo
+    map.listInfo_output.on('click', function(event){
+    	// if($(event.target).hasClass('btnTop')){
+    	// 	alert(1)
+    	// }else{
+    	// 	alert(2)
+    	// }
+    	console.log(event.target)
+    })
+    });
 
- }//onload
-	
-})()
+

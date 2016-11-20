@@ -202,10 +202,12 @@ table {
 .smm_map_listTitle .list_fifth{ width: 70px; }
 .smm_map_listTitle .list_sixth{ width: 70px; }
 .smm_map_listTitle .list_seventh{ width: 70px; position: relative;}
+.smm_map_listTitle .list_seventh_next{ width: 65px; }
 .smm_map_listTitle .list_eighth{ width: 93px; position: relative;}
+.smm_map_listTitle .list_eighth_next{ width: 66px; }
 .smm_map_listTitle .list_ninth{ width: 92px; }
-.smm_map_listTitle .list_ten{ width: 90px; }
-.smm_map_listTitle .list_eleven{ width: 139px; border: none;}
+.smm_map_listTitle .list_ten{ width: 90px; border: none; }
+/*.smm_map_listTitle .list_eleven{ width: 139px; border: none;}*/
 .listWrap_content{
 	height: 540px;
 	position: relative;
@@ -214,37 +216,40 @@ table {
     width: 56px;
     margin-top: 5px;
 }
-.listInfo_sortBtnBox1,
-.listInfo_sortBtnBox2, 
-.listCompare_sortBtnBox1,
-.listCompare_sortBtnBox2{
+#listInfo_seven_btnTop, 
+#listInfo_seven_btnDown,
+#listInfo_eight_btnTop,
+#listInfo_eight_btnDown,
+#listCompare_seven_btnTop,
+#listCompare_seven_btnDown,
+#listCompare_eight_btnTop,
+#listCompare_eight_btnDown{
 	display: inline-block;
-	width: 8px;
-	height: 13px;
-	position: absolute;
-	top: 22px;
-    line-height: 0px;
-}
-.listInfo_sortBtnBox1, .listCompare_sortBtnBox1{ left: 60px; }
-.listInfo_sortBtnBox2, .listCompare_sortBtnBox2{ left: 84px; }
-.listInfo_sortBtnBox1 .btnTop, 
-.listInfo_sortBtnBox2 .btnTop,
-.listCompare_sortBtnBox1 .btnTop,
-.listCompare_sortBtnBox2 .btnTop{
-	display: inline-block;
-	width: 8px;
+	width: 8px; 
 	height: 7px;
-	background: url(../img/sortbtn.png) no-repeat;
+	position: absolute;
 }
-.listInfo_sortBtnBox1 .btnDown, 
-.listInfo_sortBtnBox2 .btnDown,
-.listCompare_sortBtnBox1 .btnDown,
-.listCompare_sortBtnBox2 .btnDown{
-	display: inline-block;
-	width: 8px;
-	height: 6px;
+#listInfo_seven_btnTop, #listCompare_seven_btnTop{
+	top: 22px;
+	left: 60px;
+	background: url(../img/sortbtn.png) 0 0 no-repeat;
+}
+#listInfo_seven_btnDown, #listCompare_seven_btnDown{
+	top: 30px;
+	left: 60px;
 	background: url(../img/sortbtn.png) left -9px no-repeat;
 }
+#listInfo_eight_btnTop, #listCompare_eight_btnTop{
+	top: 22px;
+	left: 75px;
+	background: url(../img/sortbtn.png) 0 0 no-repeat;
+}
+#listInfo_eight_btnDown, #listCompare_eight_btnDown{
+	top: 30px;
+	left: 75px;
+	background: url(../img/sortbtn.png) left -9px no-repeat;	
+}
+
 
 .smm_map_listTitle .list_eighth div{
 	width: 75px;
@@ -271,7 +276,7 @@ table {
 	display: none;	
 }
 .smm_map_content_innerWrap{
-	min-height: 480px;
+	min-height: 568px;
 }
 .smm_map_content_listUl{
 	height: 70px;
@@ -294,9 +299,11 @@ table {
 .smm_map_content_listUl .list_sixth{ width: 70px; }
 .smm_map_content_listUl .list_seventh{ width: 70px; line-height: 70px;}
 .smm_map_content_listUl .list_eighth{ width: 93px; line-height: 70px;}
+.smm_map_content_listUl .list_seventh_next{ width: 65px; position: relative;}
+.smm_map_content_listUl .list_eighth_next{ width: 66px; position: relative;}
 .smm_map_content_listUl .list_ninth{ width: 92px; line-height: 70px;}
-.smm_map_content_listUl .list_ten{ width: 90px; }
-.smm_map_content_listUl .list_eleven{ width: 139px; border: none; }
+.smm_map_content_listUl .list_ten{ width: 90px; border: none;}
+/*.smm_map_content_listUl .list_eleven{ width: 139px; border: none; }*/
 
 .smm_map_content_listUl .list_first input{
 	width: 16px;
@@ -310,11 +317,17 @@ table {
 .smm_map_content_listUl .list_fifth,
 .smm_map_content_listUl .list_sixth,
 .smm_map_content_listUl .list_ten,
-.smm_map_content_listUl .list_eleven{
+.smm_map_content_listUl .list_eleven,
+.smm_map_content_listUl .list_seventh_next,
+.smm_map_content_listUl .list_eighth_next{
 	height: 70px;
 	display: table; 
 	*position: relative;  
 	overflow: hidden; 
+}
+.smm_map_content_listUl .list_seventh_next,
+.smm_map_content_listUl .list_eighth_next{
+	overflow: visible;
 }
 .listItems_subwrap{
 	vertical-align: middle;  
@@ -327,6 +340,7 @@ table {
 	*position: relative;  
 	*top: -50%;
 	word-wrap:break-word;
+	text-align: center;
 	overflow: hidden;
 	max-height: 68px;
 }
@@ -450,3 +464,56 @@ table {
 .paginationWrap a:hover{text-decoration: none;border: 1px solid #428bca;}
 .paginationWrap span.current{display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;color: #fff;background-color: #4699f7;	border: 1px solid #428bca;border-radius: 4px;vertical-align: middle;}
 .paginationWrap span.disabled{	display: inline-block;height: 25px;line-height: 25px;padding: 0 10px;margin: 0 2px;	color: #bfbfbf;background: #f2f2f2;border: 1px solid #bfbfbf;border-radius: 4px;vertical-align: middle;}
+
+
+.loadState{
+	width: 150px;
+	height: 150px;
+	line-height: 150px;
+	text-align: center;
+	background: #999 url(../img/index.gif) 10px 60px no-repeat;
+	border: 1px solid #e1e1e1;
+	border-radius: 10px;
+	opacity: 0.9;
+	margin: auto;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+/*附加信息移入悬浮框*/
+.tipBox{
+    width: 150px;
+    min-height: 100px;
+    line-height: 24px;
+    border: 1px solid #e1e1e1;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px #e1e1e1;
+    background: #fff;
+    position: absolute;
+    left: 85px;
+    top: 0px;
+    padding: 10px;
+    display: none;
+    z-index: 1;
+}
+.tipBox em, .tipBox span{
+    display: block;
+    width: 30px;
+    height: 16px;
+    font-size: 18px;
+    position: absolute;
+    top: 15px;
+}
+.tipBox em{
+    left: -16px;
+    color: #e1e1e1;
+    font-style: normal;
+}
+.tipBox span{
+    left: -15px;
+    color: #fff;
+}

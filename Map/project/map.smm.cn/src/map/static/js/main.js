@@ -9,7 +9,10 @@ require(
         'echarts/chart/map'
     ],function(echarts) {
     	//header_nav
-		var map = {
+    	$(document).ready(function($) {
+    		var map = {
+			selectedCatagory : '',
+			selectedProvince : '',
 			$map_subnav_title_li : $('.map_subnav_title>li'),
 			$map_subnav_title_subnav_li : $('.map_subnav_title_subnav').find('li'),
 			$listItem_info : $('.listItem_info'),
@@ -18,6 +21,8 @@ require(
 			$listCompare_wrap : $('.listCompare_wrap'),
 			$smm_map_rightCompare : $('.smm_map_rightCompare'),
 			$smm_map_listTitle_listFirst:$('.smm_map_listTitle .list_first'),
+			$smm_map_content_innerWrap: $('.smm_map_content_innerWrap'),
+			$smm_map_content_listUl: $('.smm_map_content_listUl'),
 			$contentInput : $('.smm_map_content_innerWrap .list_first input'),
 			rightBtn : $('.rightButtonToggle'),
 			listInfo_output : $('.listInfo_sortBtnBox1'),  //产量
@@ -32,15 +37,10 @@ require(
 			}
 		})
 
+
 		/*echats*/
 		var smm_charts = echarts.init(document.getElementById('smm_map_echarts'))
 		var option = {
-			    title : {
-			        text: 'SMM上海有色网——新能源',
-			        subtext: 'SMM调研数据',
-			        x:'center'
-			    },
-			   
 			    tooltip : {
 			        trigger: 'item'
 			    },
@@ -58,7 +58,6 @@ require(
 			        x: 'right',
 			        y: 'center',
 			        feature : {
-			            mark : {show: true},
 			            dataView : {show: true, readOnly: false},
 			            restore : {show: true},
 			            saveAsImage : {show: true}
@@ -73,69 +72,186 @@ require(
 			    },
 			    series : [
 			        {
-			            name: '铜',
+			            name: 'tong',
 			            type: 'map',
 			            mapType: 'china',
 			            roam: false,
-			            selectedMode : 'single',
 			            itemStyle:{
 			                normal:{label:{show:true}},
 			                emphasis:{label:{show:true}}
 			            },
-			            data:
-			            [
-			                {name: '北京',value: Math.round(Math.random()*1000)},
-			                {name: '天津',value: Math.round(Math.random()*1000)},
-			                {name: '上海',value: Math.round(Math.random()*1000)},
-			                {name: '重庆',value: Math.round(Math.random()*1000)},
-			                {name: '河北',value: Math.round(Math.random()*1000)},
-			                {name: '河南',value: Math.round(Math.random()*1000)},
-			                {name: '云南',value: Math.round(Math.random()*1000)},
-			                {name: '辽宁',value: Math.round(Math.random()*1000)},
-			                {name: '黑龙江',value: Math.round(Math.random()*1000)},
-			                {name: '湖南',value: Math.round(Math.random()*1000)},
-			                {name: '安徽',value: Math.round(Math.random()*1000)},
-			                {name: '山东',value: Math.round(Math.random()*1000)},
-			                {name: '新疆',value: Math.round(Math.random()*1000)},
-			                {name: '江苏',value: Math.round(Math.random()*1000)},
-			                {name: '浙江',value: Math.round(Math.random()*1000)},
-			                {name: '江西',value: Math.round(Math.random()*1000)},
-			                {name: '湖北',value: Math.round(Math.random()*1000)},
-			                {name: '广西',value: Math.round(Math.random()*1000)},
-			                {name: '甘肃',value: Math.round(Math.random()*1000)},
-			                {name: '山西',value: Math.round(Math.random()*1000)},
-			                {name: '内蒙古',value: Math.round(Math.random()*1000)},
-			                {name: '陕西',value: Math.round(Math.random()*1000)},
-			                {name: '吉林',value: Math.round(Math.random()*1000)},
-			                {name: '福建',value: Math.round(Math.random()*1000)},
-			                {name: '贵州',value: Math.round(Math.random()*1000)},
-			                {name: '广东',value: Math.round(Math.random()*1000)},
-			                {name: '青海',value: Math.round(Math.random()*1000)},
-			                {name: '西藏',value: Math.round(Math.random()*1000)},
-			                {name: '四川',value: Math.round(Math.random()*1000)},
-			                {name: '宁夏',value: Math.round(Math.random()*1000)},
-			                {name: '海南',value: Math.round(Math.random()*1000)},
-			                {name: '台湾',value: Math.round(Math.random()*1000)},
-			                {name: '香港',value: Math.round(Math.random()*1000)},
-			                {name: '澳门',value: Math.round(Math.random()*1000)}
-			            ]
+			            data: [
+			                
+			            ]  
 			        }
 			    ]
 			};//option
 		smm_charts.setOption(option);
+		// clearTimeout(loadingTicket);
+		// var loadingTicket = setTimeout(function (){
+		//     smm_charts.hideLoading();
+		//     smm_charts.setOption(option);
+		// },1500);
 
-
-		var ecConfig = require('echarts/config');
-		myChart.on(ecConfig.EVENT.MAP_SELECTED, function (param){
-		    // var selected = param.selected;
-		    // var str = '当前选择： ';
-		    // for (var p in selected) {
-		    //     if (selected[p]) {
-		    //         str += p + ' ';
-		    //     }
-		    // }
-		    console.log(param)
+		// var ecConfig = require('echarts/config');
+		$.ajax({
+				url : 'static/js/test4.json',
+				type : 'GET',
+				beforeSend : function(){
+					setLoad($('.listInfo_wrap')); //list show loading
+				},
+				success:function(res){
+					console.log(1)
+					listRender(res); //list render
+				},
+				error:function(XMLHttpRequest, textStatus, errorThrown){
+					console.log(errorThrown)
+				},
+				complete:function(){
+					removeLoad();
+				}
+			})
+		$.ajax({
+				url : 'static/js/test.json',
+				type : 'GET',
+				beforeSend : function(){
+					smm_charts.showLoading(); // map show loading
+				},
+				success:function(res){
+					mapRender(res); //map render	
+				},
+				error:function(XMLHttpRequest, textStatus, errorThrown){
+					console.log(errorThrown)
+				},
+				complete:function(){
+					smm_charts.hideLoading();
+				}
+			})
+		/*==========================事件请求===============================*/
+		function mapAjax(provice, header){
+			//列表数据请求
+			$.ajax({
+				url : 'catagory/' + map.selectedCatagory,
+				type : 'GET',
+				beforeSend : function(){
+					setLoad($('.listInfo_wrap')); //list show loading
+				},
+				success:function(res){
+					listRender(res); //list render
+				},
+				error:function(XMLHttpRequest, textStatus, errorThrown){
+					console.log(errorThrown)
+				},
+				complete:function(){
+					removeLoad();
+				}
+			});
+			//map数据请求
+			$.ajax({
+				url : 'map/' + map.selectedCatagory,
+				type : 'GET',
+				beforeSend : function(){
+					smm_charts.showLoading(); // map show loading
+				},
+				success:function(res){
+					mapRender(res); //map render
+				},
+				error:function(XMLHttpRequest, textStatus, errorThrown){
+					console.log(errorThrown)
+				},
+				complete:function(){
+					smm_charts.hideLoading();
+				}
+			})
+		}
+		//二级菜单
+		$('.map_subnav_title').on('click', function(event) {
+			// console.log($(event.target).is('span'))
+			if($(event.target).is('span')){
+				map.selectedCatagory = $(event.target).text();
+				// console.log(map.selectedCatagory)
+				$.ajax({
+					url : 'catagory/' + map.selectedCatagory,
+					type : 'GET',
+					beforeSend : function(){
+						smm_charts.showLoading(); // map show loading
+						setLoad($('.listInfo_wrap')); //list show loading
+					},
+					success:function(res){
+						mapRender(res); //map render
+						listRender(res); //list render
+					},
+					complete:function(){
+						smm_charts.hideLoading();
+						removeLoad();
+					}
+				})
+			}
 		})
+		//三级菜单
+		$('.map_subnav_title_subnav').on('click', function(event) {
+			event.stopPropagation();
+			if($(event.target).is('li')){
+				map.selectedCatagory = $(event.target).text();
+				console.log(map.selectedCatagory)
+				$.ajax({
+					url : 'catagory/map'+$(event.target).text(),
+					type : 'GET',
+					beforeSend : function(){
+						smm_charts.showLoading(); // map show loading
+						setLoad($('.listInfo_wrap')); //list show loading
+					},
+					success:function(res){
+						mapRender(res); //map render
+						listRender(res); //list render
+					},
+					complete:function(){
+						smm_charts.hideLoading();
+						removeLoad();
+					}
+				})
+			}
+		})
+		
+
+
+		//标签点击
+		$('.map_subnav_tips').on('click', function(event) {
+			if($(event.target).is('li')){
+				//记录点击类目
+				map.selectedCatagory = $(event.target).text(); 
+				$.ajax({
+					url : 'catagory/map'+$(event.target).text(),
+					type : 'GET',
+					beforeSend : function(){
+						smm_charts.showLoading(); // map show loading
+						setLoad($('.listInfo_wrap')); //list show loading
+					},
+					success:function(res){
+						mapRender(res); //map render
+						listRender(res); //list render
+					},
+					complete:function(){
+						smm_charts.hideLoading();
+						removeLoad();
+					}
+				})
+			}
+		})
+
+
+		//地图省份点击
+		smm_charts.on('click', function (param){
+		    map.selectedProvince = param.name
+		    $.ajax({
+		    	url:'catagory/map'+map.selectedCatagory+param.name,
+		    	type:'GET',
+		    	success:function(res){
+		    		listRender(res);
+		    	}
+		    })
+		})
+		/*=========================================================*/
 
 
 		/*列表*/
@@ -153,38 +269,6 @@ require(
 			$(this).addClass('listItem_selected');
 			map.$listItem_info.removeClass('listItem_selected');
 		})
-
-		/*==========================事件请求===============================*/
-		
-		//二级菜单
-		map.$map_subnav_title_li.each(function(index, el) {
-			// console.log($(this).children('span').text() == '矿和盐')
-			if ($(this).children('span').text() == '矿和盐') {
-				$(this).click(function(event) {
-					$.ajax({
-						url:'test.json',
-						type:'GET',
-						success:function(res){
-							refreshMap(res)
-						}
-					})
-				});
-			} else if($(this).children('span').text() == '电池材料'){
-				$(this).click(function(event) {
-					
-				});
-			}else if($(this).children('span').text() == '电池'){
-				$(this).click(function(event) {
-					
-				});
-			}else if($(this).children('span').text() == '终端'){
-				$(this).click(function(event) {
-					
-				});
-			}
-		});
-
-		/*=========================================================*/
 
 	/*右侧对比栏列表*/
 		//初始定位高度
@@ -230,7 +314,6 @@ require(
 			//删除按钮
 			if ($(event.target).text() == '删除') {
 				for (var i = 0; i < map_company.length; i++) {
-					// map_company[i].name == $(event.target).parent().siblings('.rightCompare_listItems_content').text()
 					if(map_company[i].name == $(event.target).parent().siblings('.rightCompare_listItems_content').text()){
 						
 						//对应复选框改为未勾选
@@ -267,6 +350,7 @@ require(
 				map.$listItem_info.removeClass('listItem_selected');
 				refreshComparePage();
 				oddEvenCompare();
+				doTipBox();
 			}
 
 			//清空对比栏
@@ -291,42 +375,88 @@ require(
 			});
 			onOff = 1;
 		})
-	/*列表勾选*/
-		$('.smm_map_content_listUl').on('click', function(event){
 
-			if($(event.target).is(':checked')){
-				var map01 = {};
-				var html = '';
-				map01.id = $(event.target).parent().parent().attr('hello');//获取企业唯一id
-				map01.name = $(event.target).parent().siblings('.list_third').find('.listItems_subwrap div').text();//企业名称
-				html = $(event.target).parent().parent().prop('outerHTML');
-				map01.ul = html;//ul
-				var arrayNum = map_company.push(map01);
 
-				if (onOff == 1) {
-					$('.smm_map_rightCompare').stop(true,true).animate({'left': 0}, 500, function(){
-						$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) -12px 0 no-repeat');			
-					});
-					onOff = 2;
-				}
-			}else{
-				for (var i = 0; i < map_company.length; i++) {
-					if(map_company[i].id == $(event.target).parent().parent().attr('hello')){
-						map_company.splice(i, 1);
+		/*列表勾选*/
+		checkEvent();
+		function checkEvent(){
+			$('.smm_map_content_listUl').on('click', function(event){
+
+				if($(event.target).is(':checked')){
+					var map01 = {};
+					var html = '';
+					map01.id = $(event.target).parent().parent().attr('hello');//获取企业唯一id
+					map01.name = $(event.target).parent().siblings('.list_third').find('.listItems_subwrap div').text();//企业名称
+					html = $(event.target).parent().parent().prop('outerHTML');
+					map01.ul = html;//ul
+					var arrayNum = map_company.push(map01);
+
+					if (onOff == 1) {
+						$('.smm_map_rightCompare').stop(true,true).animate({'left': 0}, 500, function(){
+							$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) -12px 0 no-repeat');			
+						});
+						onOff = 2;
 					}
-				}
+				}else{
+					for (var i = 0; i < map_company.length; i++) {
+						if(map_company[i].id == $(event.target).parent().parent().attr('hello')){
+							map_company.splice(i, 1);
+						}
+					}
 
-				if (onOff == 2 && map_company.length == 0) {
-					$('.smm_map_rightCompare').stop(true,true).animate({'left': 162}, 500, function(){
-						$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) no-repeat')	
-					});
-					onOff = 1;
-				}
-			}	
-			checkboxCheck();
-			refreshCompare();
-		})
+					if (onOff == 2 && map_company.length == 0) {
+						$('.smm_map_rightCompare').stop(true,true).animate({'left': 162}, 500, function(){
+							$('.rightButtonToggle').css('background','url(./static/img/button_arrow.png) no-repeat')	
+						});
+						onOff = 1;
+					}
+				}	
+				checkboxCheck();
+				refreshCompare();
+			})
+		}
+		
+		/*地图 、 表格  渲染*/
+		/*==============*/
+		function mapRender(res) {
+			option.dataRange.max = res.max;
+			// option.series[0].name = map.selectedCatagory;
+			option.series[0].data = res.data;
+			smm_charts.setOption(option);
+		}
 
+		function listRender(res){
+			var str = '';
+			for (var i = 0; i < res.data.length; i++) {
+				if (res.data[i].company_info.security_status == 0) {
+					res.data[i].company_info.security_status = '未上市'
+				} else if(res.data[i].company_info.mine_info == ''){
+					res.data[i].company_info.mine_info = '-'
+				} else if(res.data[i].product_infos[0].quantity == null){
+					res.data[i].product_infos[0].quantity = 'N/A'
+				}
+				str += ''+'<ul class="smm_map_content_listUl" hello="'+res.data[i].company_info.id+'">'	
+						 +'<li class="list_first"><input type="checkbox" name=""></li>'
+						 +'<li class="list_second"><div><p>'+res.data[i].company_info.province+'</p><p>'+res.data[i].company_info.city+'</p></div></li>'
+						 +'<li class="list_third"><div class="listItems_subwrap"><div>'+res.data[i].company_info.name+'</div></div></li>'
+						 +'<li class="list_fourth"><div class="listItems_subwrap"><div>'+res.data[i].company_info.address+'</div></div></li>'
+						 +'<li class="list_fifth"><div class="listItems_subwrap"><div><p>'+res.data[i].company_info.security_status+'</p><p>'+res.data[i].company_info.security_code+'</p></div></div></li>'
+						 +'<li class="list_sixth"><div class="listItems_subwrap"><div>'+res.data[i].company_info.mine_info+'</div></div></li>'
+						 +'<li class="list_seventh">'+(res.data[i].product_infos[0].quantity?res.data[i].product_infos[0].quantity:"N/A")+'</li>'
+						 +'<li class="list_seventh_next"><div class="listItems_subwrap"><div>'+(res.data[i].product_infos[0].additional_info?res.data[i].product_infos[0].additional_info:"N/A")+'</div></div></li>'
+						 +'<li class="list_eighth"><span>'+(res.data[i].product_infos[1].quantity?res.data[i].product_infos[1].quantity:"N/A")+'</span></li>'
+						 +'<li class="list_eighth_next"><div class="listItems_subwrap"><div>'+(res.data[i].product_infos[1].additional_info?res.data[i].product_infos[1].additional_info:"N/A")+'</div></div></li>'
+						 +'<li class="list_ninth"><span>'+(res.data[i].product_infos[2].additional_info?res.data[i].product_infos[2].additional_info:"N/A")+'</span></li>'
+						 +'<li class="list_ten"><div class="listItems_subwrap"><div>'+(res.data[i].product_infos[3].additional_info?res.data[i].product_infos[3].additional_info:"N/A")+'</div></div></li>'
+					     +'</ul>'
+			}
+			$('.smm_map_content_innerWrap').html(str);
+			checkEvent(); //表格渲染，勾选框事件绑定
+			oddEven();//隔行变色
+			paginationInit(20);
+			doTipBox();
+		}
+		/*==============*/
 
 		// refreshCompare()刷新对比栏
 		function refreshCompare(){
@@ -380,23 +510,18 @@ require(
 
 		//checkboxCheck() 检查复选框，大于5个，其余禁选
 		function checkboxCheck() {
-			var checkNum = 0;
-			map.$contentInput.each(function(index, el) {
-				if($(this)[0].checked){
-					checkNum++;
-				};		
-			});
-			if (checkNum >= 5) {
-				map.$contentInput.each(function(index, el) {
+			var $contentInput = $('.smm_map_content_innerWrap .list_first input');
+			if (map_company.length >= 5) {
+				$contentInput.each(function(){
 					if(!$(this)[0].checked){
 						$(this).attr('disabled','disabled');
-					};		
-				});
+					};
+				})
 			}else{
-				map.$contentInput.each(function(index, el) {
+				$contentInput.each(function() {
 					$(this).removeAttr('disabled');
 				});
-			};
+			}
 		}
 
 		//隔行变色
@@ -410,36 +535,109 @@ require(
 			$('.listCompare_content .smm_map_content_listUl:odd').css('background', '#fafafa');
 		}
 	/*分页部分*/
-	$(".paginationWrap").createPage({
-        pageCount:100,
-        current:1,
-        backFn:function(p){
-            console.log(p);
-        }
-    });
-
-	//map 刷新
-	// option.title.subtext = 'SMM调研数据'
-	// option.dataRange.max = 1000
-	// option.series[0].name = 
-	// option.series[0].data = 
-	function refreshMap(res){
-		option.title.subtext = res.catogary;
-		option.dataRange.max = res.max;
-		option.series[0].name = res.catogary;
-		option.series[0].data = res.data;
-		smm_charts.setOption(option);
+	refreshPagination();
+	function refreshPagination(){
+		$(".paginationWrap").createPage({
+	        pageCount: 10/2,
+	        current:1,
+	        backFn:function(p){
+	            console.log(p);
+	        }
+	    });		
 	}
+	function paginationInit(totalPage){
+		$(".paginationWrap").createPage({
+			pageCount: totalPage,
+	        current:1
+	    });
+	}
+
+
+	//map list pagination compare 同时刷新
+	// function loadMapList(res){
+	// 	refreshMap(res);
+	// 	listRender(res);
+	// 	var $contentInput = $('.smm_map_content_innerWrap .list_first input');
+	// 	map.$smm_map_content_listUl = $('.smm_map_content_listUl');
+	// 	// map.$contentInput = $('.smm_map_content_innerWrap .list_first input');
+	// 	console.log(map.$smm_map_content_listUl)
+	// 	refreshPagination();
+	// 	oddEven();
+	// 	checkEvent();
+	// 	doTipBox();
+	// }
+	
+	// setLoad(map.$smm_map_content_innerWrap)
+	//loading
+		//设置loding
+		function setLoad(dom){
+			var div = document.createElement('div');
+			div.className = 'loadState';
+			div.innerHTML = '&nbsp;&nbsp;&nbsp;&nbsp;加载中...';
+			dom.append(div);
+		}
+		function removeLoad(){
+			$('.loadState').remove();
+		}
     /*排序功能*/
-    //listInfo
-    map.listInfo_output.on('click', function(event){
-    	// if($(event.target).hasClass('btnTop')){
-    	// 	alert(1)
-    	// }else{
-    	// 	alert(2)
-    	// }
-    	console.log(event.target)
+ 
+    $('#listCompare_seven_btnTop').on('click', function(event){
+    	console.log(1)
     })
+
+    //悬浮框
+	
+    function doTipBox() {
+    	var listSeven = $('.smm_map_content_listUl .list_seventh_next');
+    	var listEight = $('.smm_map_content_listUl .list_eighth_next');
+    	listSeven.each(function(){
+		    $(this).on({
+		        'mouseover': function(){
+		            tipBox($(this));
+		            $(this).find('.tipBox').stop().show();
+		            $('.tipBox').on('mouseover',function(event){
+		                event.stopPropagation();
+		            })
+		        },
+		        'mouseout': function(){
+		            $(this).find('.tipBox').stop().css({'display':'none'},function(){
+		                $(this).remove();
+		            });
+		        }
+		    })
+		})
+    	listEight.each(function(){
+		    $(this).on({
+		        'mouseover': function(){
+		            tipBox($(this));
+		            $(this).find('.tipBox').stop().show();
+		            $('.tipBox').on('mouseover',function(event){
+		                event.stopPropagation();
+		            })
+		        },
+		        'mouseout': function(){
+		            $(this).find('.tipBox').stop().css({'display':'none'},function(){
+		                $(this).remove();
+		            });
+		        }
+		    })
+		})
+    }
+    //悬浮框
+    function tipBox(dom){
+        var div = document.createElement('div');
+	    var em = document.createElement('em');
+	    var span = document.createElement('span');
+	    div.className = 'tipBox';
+	    $(div).text(dom.children('.listItems_subwrap').find('div').text());
+	    em.innerHTML = '&#9670;';
+	    span.innerHTML = '&#9670;';
+	    $(em).appendTo(div);
+	    $(span).appendTo(div);
+	    $(div).appendTo(dom);	
+    }
+    	});
+		
     });
 
 

@@ -101,7 +101,6 @@ require(
 					setLoad($('.listInfo_wrap')); //list show loading
 				},
 				success:function(res){
-					console.log(1)
 					listRender(res); //list render
 				},
 				error:function(XMLHttpRequest, textStatus, errorThrown){
@@ -389,7 +388,12 @@ require(
 					map01.name = $(event.target).parent().siblings('.list_third').find('.listItems_subwrap div').text();//企业名称
 					html = $(event.target).parent().parent().prop('outerHTML');
 					map01.ul = html;//ul
-					var arrayNum = map_company.push(map01);
+					quantity = $(event.target).parent().siblings('.list_seventh').text();
+					map01.quantity = Number(quantity)?Number(quantity):0;
+					capcity = $(event.target).parent().siblings('.list_eighth').text();
+					map01.capcity = Number(capcity)?Number(capcity):0;
+					console.log(map01)
+					map_company.push(map01);
 
 					if (onOff == 1) {
 						$('.smm_map_rightCompare').stop(true,true).animate({'left': 0}, 500, function(){
@@ -508,6 +512,45 @@ require(
 			$('.listCompare_content .list_first').remove();
 		}
 
+
+		// ===================================排序按钮功能======================================
+		//排序功能函数sort
+		function compare(property){
+		    return function(a,b){
+		        var value1 = a[property];
+		        var value2 = b[property];
+		        return value1 - value2;
+		    }
+		}
+		// 产量正序
+		$('#listCompare_seven_btnTop').on('click', function(event) {
+			// console.log(1)
+			map_company.sort(compare('quantity'));
+			refreshComparePage();
+		});
+		// 产量倒序
+		$('#listCompare_seven_btnDown').on('click', function(event) {
+			// console.log(2)
+			map_company.sort(compare('quantity')).reverse();
+			refreshComparePage();
+		});
+		// 产能正序
+		$('#listCompare_eight_btnTop').on('click', function(event) {
+			console.log(3)
+			map_company.sort(compare('capcity'));
+			refreshComparePage();
+		});
+		// 产能倒序
+		$('#listCompare_eight_btnDown').on('click', function(event) {
+			console.log(4)
+			map_company.sort(compare('quantity')).reverse();
+			refreshComparePage();
+		});
+		// ===========================================end=======================================
+		
+
+
+
 		//checkboxCheck() 检查复选框，大于5个，其余禁选
 		function checkboxCheck() {
 			var $contentInput = $('.smm_map_content_innerWrap .list_first input');
@@ -581,10 +624,6 @@ require(
 		}
     /*排序功能*/
  
-    $('#listCompare_seven_btnTop').on('click', function(event){
-    	console.log(1)
-    })
-
     //悬浮框
 	
     function doTipBox() {

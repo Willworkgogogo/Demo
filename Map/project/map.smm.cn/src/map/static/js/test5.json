@@ -1,0 +1,156 @@
+{
+	"data":[
+		{
+			"company_info":{
+				"id":11,
+				"province":"新疆",
+				"city":"乌鲁木齐",
+				"name":"新疆铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"0",
+				"security_code":"A0203312",
+				"mine_info":"乌鲁木齐矿山"
+
+			},
+			"product_infos":[
+				{ "quantity":20000,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}
+			]
+		},
+		{
+			"company_info":{
+				"id":12,
+				"province":"西藏",
+				"city":"拉萨",
+				"name":"xizang铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"1",
+				"security_code":"",
+				"mine_info":""
+
+			},
+			"product_infos":[
+				{ "quantity":null,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}	
+			]
+		},
+		{
+			"company_info":{
+				"id":13,
+				"province":"广东",
+				"city":"广州市",
+				"name":"guangzhou铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"0",
+				"security_code":"A0203312",
+				"mine_info":"乌鲁木齐矿山"
+
+			},
+			"product_infos":[
+				{ "quantity":20000,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}	
+			]
+		},
+		{
+			"company_info":{
+				"id":14,
+				"province":"广西",
+				"city":"广州市",
+				"name":"广西铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"0",
+				"security_code":"A0203312",
+				"mine_info":"乌鲁木齐矿山"
+
+			},
+			"product_infos":[
+				{ "quantity":20000,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}	
+			]
+		},
+		{
+			"company_info":{
+				"id":15,
+				"province":"海南",
+				"city":"广州市",
+				"name":"海南铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"0",
+				"security_code":"A0203312",
+				"mine_info":"乌鲁木齐矿山"
+
+			},
+			"product_infos":[
+				{ "quantity":20000,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}	
+			]
+		},
+		{
+			"company_info":{
+				"id":16,
+				"province":"天津",
+				"city":"广州市",
+				"name":"天津铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"0",
+				"security_code":"A0203312",
+				"mine_info":"乌鲁木齐矿山"
+
+			},
+			"product_infos":[
+				{ "quantity":20000,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}	
+			]
+		},
+		{
+			"company_info":{
+				"id":17,
+				"province":"江苏",
+				"city":"广州市",
+				"name":"nanjing铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"0",
+				"security_code":"A0203312",
+				"mine_info":"乌鲁木齐矿山"
+
+			},
+			"product_infos":[
+				{ "quantity":20000,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}	
+			]
+		},
+		{
+			"company_info":{
+				"id":18,
+				"province":"shandong",
+				"city":"广州市",
+				"name":"shandong铜业制品公司",
+				"address":"新疆某某市某某地址",
+				"security_status":"0",
+				"security_code":"A0203312",
+				"mine_info":"乌鲁木齐矿山"
+
+			},
+			"product_infos":[
+				{ "quantity":20000,"additional_info":null},
+				{ "quantity":10000,"additional_info":null},
+				{ "additional_info":null},
+				{ "additional_info":null}	
+			]
+		}
+	]
+}

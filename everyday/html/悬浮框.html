@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>悬浮框封装</title>
+	<style type="text/css">
+		.box{
+			width: 200px;
+			height: 150px;
+			background: lightblue;
+			border: 1px dashed #e1e1e1;
+			border-radius: 5px;
+		}
+	</style>
+</head>
+<body>
+	<div class="box"></div>
+	
+	<script type="text/javascript" src="../js/jquery.min.js"></script>
+	<script type="text/javascript">
+		tipBox()
+
+		function tipBox(dom){
+	        var div = document.createElement('div');
+		    var em = document.createElement('em');
+		    var span = document.createElement('span');
+		    div.className = 'tipBox';
+		    $(div).text(dom.children('.listItems_subwrap').find('div').text());
+		    em.innerHTML = '&#9670;';
+		    span.innerHTML = '&#9670;';
+		    $(em).appendTo(div);
+		    $(span).appendTo(div);
+		    $(div).appendTo(dom);	
+	    }
+	</script>
+</body>
+</html>

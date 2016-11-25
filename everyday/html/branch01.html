@@ -3,9 +3,47 @@
 <head>
 	<meta charset="UTF-8">
 	<title>brach01</title>
+	<style>
+		*{
+			font-size: 12px;
+			color: #fff;
+			background: #fff;
+			outline: none;
+			border: 1px solid #000;
+			border-radius: 5px;
+			width: 50px;
+			height: 30px;
+			line-height: 50px;
+		}
+	</style>
 </head>
 <body>
 	<h2>hello world</h2>
-	<h2>merge with me</h2>
+	<h3>merge with me</h3>
+	<span></span>
+	<div>
+		<span>00001</span>
+		<div>00002</div>
+		<div>00003</div>
+		<div>00004</div>
+		<div>00005</div>
+		<div>00006</div>
+	</div>
+	<script>
+		function my(){
+			var dom = {
+				name : 'wang',
+				age : 18,
+				sayName : function (){
+					console.log(this.name)
+				}
+			}
+			return dom;
+		}
+		my().sayName();
+		
+		
+		
+	</script>
 </body>
 </html>

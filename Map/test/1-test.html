@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Echarts</title>
+</head>
+<body>
+    <div id="main" style="height: 400px; width: 1000px;"></div>
+
+    <script src="//echarts.baidu.com/build/dist/echarts.js"></script>
+    <script>
+        require.config({
+            paths:{
+                echarts:"//echarts.baidu.com/build/dist"
+            }
+        });
+        require(
+            [
+                'echarts',
+                'echarts/chart/bar'
+            ],
+            function (ec) {
+                var myChart = ec.init(document.getElementById('main'));
+                var option = {
+                    tooltip:{
+                        show: true,
+                    },
+                    legend:{
+                        data:['销量']
+                    },
+                    xAxis:[
+                        {
+                            type:'category',
+                            data:["衬衫","羊毛衫","衬衫","羊毛衫","衬衫","羊毛衫"]
+                        }
+                    ],
+                    yAxis:[
+                        {
+                            type:'value'
+                        }
+                    ],
+                    series:[
+                        {
+                            "name":"销量",
+                            "type":"bar",
+                            "data":[5,10,20,30,40,50]
+                        }
+                    ]
+                };
+
+                myChart.setOption(option,true);
+            }
+        )
+    </script>
+</body>
+</html>

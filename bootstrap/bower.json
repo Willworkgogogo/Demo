@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "wangweiwei <will_workhard@163.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Willworkgogogo/Demo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "1.9.1"
+  }
+}

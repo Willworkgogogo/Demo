@@ -1,10 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="e32e2143-f30f-4410-9b41-b7d29c0591fc" name="Default" comment="">
       <change type="DELETED" beforePath="$PROJECT_DIR$/everyday/todo.txt" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/golang/github.com/gin-gonic/gin" afterPath="$PROJECT_DIR$/golang/github.com/gin-gonic/gin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/everyday/html/悬浮框.html" afterPath="$PROJECT_DIR$/everyday/html/悬浮框.html" />
+=======
+    <list default="true" id="00bb8f7a-2797-4940-91b4-9f85e4d228f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/willwang.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Map/test/1-test.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Map/test/2-echartsall.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/.bowerrc" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/day01/container.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/day01/grid.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bootstrap/day01/xs.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/basic/app.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/basic/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/basic/app1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/basic/app2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/basic/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/basic/webpack.config.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/test02/app.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/test02/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/test02/module.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/test02/style.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/everyday/webpack_basic/test02/webpack.config.js" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Map/new.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/Map/有色地图.psd" afterPath="" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
     </list>
     <ignored path="Demo.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -27,16 +53,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+<<<<<<< HEAD
       <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/package.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="260">
               <caret line="10" column="19" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="19" />
+=======
+      <file leaf-file-name="container.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bootstrap/day01/container.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="175">
+              <caret line="7" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
               <folding />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file leaf-file-name="gulpfile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/gulpfile.js">
           <provider selected="true" editor-type-id="text-editor">
@@ -94,6 +129,13 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="520">
               <caret line="20" column="17" selection-start-line="20" selection-start-column="17" selection-end-line="20" selection-end-column="17" />
+=======
+      <file leaf-file-name="xs.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bootstrap/day01/xs.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
               <folding />
             </state>
           </provider>
@@ -105,7 +147,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
+<<<<<<< HEAD
         <option value="TypeScript File" />
+=======
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
         <option value="HTML File" />
       </list>
     </option>
@@ -116,6 +161,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/Typescript/hello.ts" />
         <option value="$PROJECT_DIR$/Typescript/1-init/hello.ts" />
         <option value="$PROJECT_DIR$/Typescript/1-init/2-demo.ts" />
@@ -147,6 +193,27 @@
         <option value="$PROJECT_DIR$/everyday/html/悬浮框.html" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
         <option value="$PROJECT_DIR$/插件集合/常用正则表达式/readme.md" />
+=======
+        <option value="$PROJECT_DIR$/Map/test/1-test.html" />
+        <option value="$PROJECT_DIR$/Map/test/2-echartsall.html" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/basic/app.js" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/basic/app.css" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/basic/index.html" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/basic/package.json" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/basic/app1.js" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/basic/app2.js" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/basic/webpack.config.js" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/test02/index.html" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/test02/module.js" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/test02/package.json" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/test02/style.css" />
+        <option value="$PROJECT_DIR$/everyday/webpack_basic/test02/app.js" />
+        <option value="$PROJECT_DIR$/bootstrap/.bowerrc" />
+        <option value="$PROJECT_DIR$/bootstrap/day01/container.html" />
+        <option value="$PROJECT_DIR$/bootstrap/day01/template.html" />
+        <option value="$PROJECT_DIR$/bootstrap/day01/grid.html" />
+        <option value="$PROJECT_DIR$/bootstrap/day01/xs.html" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
       </list>
     </option>
   </component>
@@ -157,6 +224,7 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
+<<<<<<< HEAD
     <handled-path value="$PROJECT_DIR$/Angular2/node_modules" />
     <handled-path value="$PROJECT_DIR$/gulpProj/node_modules" />
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -166,6 +234,15 @@
     <option name="y" value="250" />
     <option name="width" value="1865" />
     <option name="height" value="988" />
+=======
+    <handled-path value="$PROJECT_DIR$/bootstrap/node_modules" />
+    <handled-path value="$PROJECT_DIR$/everyday/webpack_basic/basic/node_modules" />
+    <handled-path value="$PROJECT_DIR$/everyday/webpack_basic/test02/node_modules" />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -174,7 +251,11 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
+<<<<<<< HEAD
     <ConfirmationsSetting value="1" id="Add" />
+=======
+    <ConfirmationsSetting value="2" id="Add" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -192,7 +273,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scratches" />
+=======
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -202,6 +286,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+<<<<<<< HEAD
         </subPane>
       </pane>
     </panes>
@@ -221,6 +306,65 @@
       <recent name="$PROJECT_DIR$/Typescript/1-init/js" />
       <recent name="$PROJECT_DIR$/Typescript/1-init" />
     </key>
+=======
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Demo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="day01" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scratches" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="nodejs_interpreter_path" value="/usr/local/bin/node" />
+    <property name="FullScreen" value="true" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
   </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -229,6 +373,7 @@
     <configuration default="true" type="DartTestRunConfigurationType" factoryName="Dart Test">
       <method />
     </configuration>
+<<<<<<< HEAD
     <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
       <module name="" />
       <working_directory value="$PROJECT_DIR$" />
@@ -249,6 +394,8 @@
       <kind value="DIRECTORY" />
       <method />
     </configuration>
+=======
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
     <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma">
       <config-file value="" />
       <node-interpreter value="project" />
@@ -305,6 +452,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="e32e2143-f30f-4410-9b41-b7d29c0591fc" name="Default" comment="" />
       <created>1480297281582</created>
       <option name="number" value="Default" />
@@ -318,10 +466,24 @@
       <workItem from="1481251083063" duration="258000" />
       <workItem from="1481251354077" duration="1005000" />
       <workItem from="1481388290164" duration="60000" />
+=======
+      <changelist id="00bb8f7a-2797-4940-91b4-9f85e4d228f2" name="Default" comment="" />
+      <created>1480902967479</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1480902967479</updated>
+      <workItem from="1480902968631" duration="5913000" />
+      <workItem from="1480952391785" duration="209000" />
+      <workItem from="1481009996313" duration="159000" />
+      <workItem from="1481036834307" duration="4075000" />
+      <workItem from="1482159238690" duration="1629000" />
+      <workItem from="1482231817157" duration="12000" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="26542000" />
   </component>
   <component name="TodoView">
@@ -345,13 +507,32 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3939732" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13902053" sideWeight="0.5058997" order="2" side_tool="true" content_ui="tabs" />
+=======
+    <option name="totallyTimeSpent" value="11997000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1897038" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32891566" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+<<<<<<< HEAD
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32970297" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+=======
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -372,6 +553,7 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/gulpProj/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -380,12 +562,23 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/golang/gin/form.go">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/asset/js/codemirror.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/asset/js/echartsHome.js">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/gulpProj/src/greet.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="78">
@@ -396,10 +589,23 @@
     <entry file="file://$PROJECT_DIR$/gulpProj/dist/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/test/1-test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="36" selection-end-line="46" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/test/performance/option.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7774">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/gulpProj/dist/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -408,12 +614,30 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/echarts/test/allchart/all.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5775">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/about.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7280">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/bower.json">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Typescript/1-init/js/hello.js" />
     <entry file="file://$PROJECT_DIR$/Typescript/1-init/hello.ts">
       <provider selected="true" editor-type-id="text-editor">
@@ -423,19 +647,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Typescript/1-init/hello.js">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/echarts/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/.npmignore">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Typescript/1-init/2-demo.js">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/asset/img/architecture.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/geoJson/GUANGZHOU_geo.json">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Typescript/1-init/2-demo.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -493,12 +737,72 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/gulpProj/dist/index.html">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/geoJson/HK_geo.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/geoJson/china-main-city/110100.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7200">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/geoJson/continent_geo.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="35825">
+          <caret line="0" column="135771" selection-start-line="0" selection-start-column="135771" selection-end-line="0" selection-end-column="135771" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/theme/blue.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/topic/10-me-china/js/data-a-china.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/topic/10-me-china/js/option0.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="15" column="14" selection-start-line="15" selection-start-column="14" selection-end-line="15" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/topic/10-me-china/js/option3.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/topic/10-me-china/js/option2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/topic/10-me-china/js/option1.js">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/gulpProj/dist/bundle.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="26">
@@ -530,10 +834,51 @@
     <entry file="file://$PROJECT_DIR$/Typescript/1-init/6-enum.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-191">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/topic/10-me-china/js/djws.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5574">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/topic/10-me-china/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="204" column="7" selection-start-line="204" selection-start-column="7" selection-end-line="204" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/asset/js/javascript.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="54" selection-start-line="3" selection-start-column="37" selection-end-line="3" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/axis.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="35" column="29" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/test/2-echartsall.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/asset/js/echartsHome.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/Typescript/1-init/6-enum.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="390">
@@ -661,12 +1006,143 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/everyday/html/分页.html">
+=======
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/asset/js/echartsExample.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="18" column="36" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/example/map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="143" column="52" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Map/echarts/doc/asset/js/codemirror.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="4" column="57" selection-start-line="3" selection-start-column="0" selection-end-line="4" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/app2.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/assets/main.bundle.js" />
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/test02/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="39" selection-start-line="5" selection-start-column="39" selection-end-line="5" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/app1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="57" selection-start-line="1" selection-start-column="57" selection-end-line="1" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/test02/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="20" selection-start-line="1" selection-start-column="20" selection-end-line="1" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/test02/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/test02/module.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="46" selection-start-line="0" selection-start-column="46" selection-end-line="0" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/test02/webpack.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/test02/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="34" selection-start-line="0" selection-start-column="34" selection-end-line="0" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/test02/bundle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/everyday/webpack_basic/basic/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="11" column="40" selection-start-line="11" selection-start-column="40" selection-end-line="11" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/.bowerrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="1" column="36" selection-start-line="1" selection-start-column="36" selection-end-line="1" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/bower.json">
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/everyday/html/多行文本居中.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -687,10 +1163,32 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="52">
           <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
+=======
+    <entry file="file://$PROJECT_DIR$/bootstrap/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/day01/template.html" />
+    <entry file="file://$PROJECT_DIR$/bootstrap/day01/grid.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bootstrap/day01/container.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="28" selection-end-column="7" />
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
           <folding />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/插件集合/常用正则表达式/readme.md">
       <provider editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -716,6 +1214,15 @@
           <second_editor />
         </state>
       </provider>
+=======
+    <entry file="file://$PROJECT_DIR$/bootstrap/day01/xs.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="38" selection-start-line="20" selection-start-column="38" selection-end-line="20" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+>>>>>>> 6ea9d4bb126dc81bf4db43f33a82b65499917583
     </entry>
   </component>
 </project>

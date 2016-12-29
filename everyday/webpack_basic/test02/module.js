@@ -1,0 +1,1 @@
+module.exports = document.write('it works from module.js');

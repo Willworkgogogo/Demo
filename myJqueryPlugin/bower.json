@@ -1,0 +1,21 @@
+{
+  "name": "demo",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "willwang"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Willworkgogogo/Demo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1"
+  }
+}

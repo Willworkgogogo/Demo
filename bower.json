@@ -1,0 +1,24 @@
+{
+  "name": "Demo",
+  "homepage": "https://github.com/Willworkgogogo/Demo",
+  "authors": [
+    "wangweiwei <will_workhard@163.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./static/vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.9.1"
+  },
+  "devDependencies": {
+    "jquery": "1.9.1"
+  }
+}

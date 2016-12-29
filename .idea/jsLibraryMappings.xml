@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$" libraries="{Demo/node_modules}" />
+    <file url="file://$PROJECT_DIR$/Angular2" libraries="{Demo/Angular2/node_modules}" />
+    <file url="file://$PROJECT_DIR$/gulpProj" libraries="{Demo/gulpProj/node_modules}" />
+  </component>
+</project>

@@ -1,0 +1,18 @@
+{
+  "name": "everyday",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Willworkgogogo@gmail.com"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Willworkgogogo/Demo",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./static/vendor",
+    "test",
+    "tests"
+  ]
+}

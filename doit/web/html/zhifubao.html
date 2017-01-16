@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			color: #1a1a1a;
+			font-size: 12px;
+			font-family:  "Microsoft YaHei", "Helvetica Neue", Tahoma, sans-serif;
+		}
+		a{
+			text-decoration: none;
+		}
+		.serviceList{
+			width: 100%;
+			background-color: #fff;
+			margin-top: 100px;
+			font-family: "PingFangSC-SC", "Microsoft YaHei", Tahoma, sans-serif;
+		}
+		.serviceListWrap{
+			width: 1200px;
+			margin: 0 auto;
+			padding: 0;
+		}
+		.serviceList, .serviceListWrap, .serviceItem{
+			background-color: #fff;
+			-moz-box-sizing: border-box;
+			-ms-box-sizing: border-box;
+			box-sizing: border-box;
+		}
+		.serviceItem{
+			display: block;
+			width: 270px;
+			height: 310px;
+			padding: 50px 21px;
+			border: 1px solid transparent;
+			text-align: center;
+			margin: 0 0 10px;
+			float: left;
+			transition: all 168ms;
+		}
+		.serviceImg{
+			width: 120px;
+			height: 120px;
+			border: 3px solid transparent;
+			border-radius: 100%;
+			box-sizing: border-box;
+		}
+		.serviceItem + .serviceItem{
+			margin-left: 40px;
+		}
+
+		/*按钮移入效果*/
+		.serviceItem .serviceLink{
+			width: 186px;
+			opacity: 0.9;
+			display: none;
+			filter: alpha(opacity=90);
+			color: #fff;
+			padding: 13px 20px;
+			background-color: #19ACF7;
+			margin: 5px auto;
+			font-size: 14px;
+			border-radius: 5px;
+			line-height: 1;
+			font-family: "PingFangSC-SC", "Microsoft YaHei", Tahoma, sans-serif;
+		}
+		.serviceItem, .serviceImg{
+			transition: all 160ms;
+		}
+		.serviceItem:hover{
+			border-color: #dedddd;
+			padding-top: 26px;
+		}
+		.serviceItem:hover .serviceLink{
+			display: block;
+		}
+		.serviceItem:hover .serviceImg{
+			width: 110px;
+			height: 110px;
+		}
+		.serviceTitle{
+			padding: 15px 0 12px;
+		    line-height: 1;
+			font-weight: 400;
+			color: #3e3e3e;
+			font-size: 20px;
+		}
+		.serviceDesc{
+			color: #9a9a9a;
+			font-size: 14px;
+			height: 54px;
+			overflow: hidden;
+		}
+	</style>
+</head>
+<body>
+	<div class="serviceList">
+		<div class="serviceListWrap">
+			<a href="" class="serviceItem" target="_blank">
+				<img class="serviceImg" src="https://zos.alipayobjects.com/cmsmng/cms/images/ixszue1b/79a12086-cd1a-46df-899b-c379f42e677e.png"></img>
+				<h3 class="serviceTitle">电脑网站支付</h3>
+				<div class="serviceDesc">用户在商家网站上完成付款</div>
+				<span class="serviceLink">我要接入</span>
+			</a>
+			<a href="" class="serviceItem" target="_blank">
+				<img class="serviceImg" src="https://zos.alipayobjects.com/cmsmng/cms/images/ixszuoy4/2304416c-c85a-4c12-8724-4f84e89e24fb.png"></img>
+				<h3 class="serviceTitle">手机网站支付</h3>
+				<div class="serviceDesc">用户在商家网站上完成付款</div>
+				<span class="serviceLink">我要接入</span>
+			</a>
+			<a href="" class="serviceItem" target="_blank">
+				<img class="serviceImg" src="https://zos.alipayobjects.com/cmsmng/cms/images/ixszv6d7/409a4814-5fb1-46dd-864a-6032aa2bab7b.png"></img>
+				<h3 class="serviceTitle">APP支付</h3>
+				<div class="serviceDesc">用户在商家网站上完成付款</div>
+				<span class="serviceLink">我要接入</span>
+			</a>
+			<a href="" class="serviceItem" target="_blank">
+				<img class="serviceImg" src="https://zos.alipayobjects.com/cmsmng/cms/images/ixszvlta/df0ea6a6-170a-4b76-ba00-8c9b860d32a3.png"></img>
+				<h3 class="serviceTitle">当面付</h3>
+				<div class="serviceDesc">只需扫描用户的付款码，或用户扫描商家的二维码完成付款</div>
+				<span class="serviceLink">我要接入</span>
+			</a>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,6 +1,3 @@
-/**
- * Created by wangweiwei on 16/11/29.
- */
 function sumMatrix(matrix) {
     var sum = 0;
     for (var i = 0; i < matrix.length; i++) {
@@ -13,3 +10,4 @@ function sumMatrix(matrix) {
 }
 var arr = [[1, 2, 3], [1, 2]];
 console.log(sumMatrix(arr));
+//# sourceMappingURL=2-max.js.map

@@ -1,6 +1,3 @@
-/**
- * Created by wangweiwei on 16/11/28.
- */
 var Student = (function () {
     function Student(firstName, middleInitial, lastName) {
         this.firstName = firstName;
@@ -14,5 +11,5 @@ function greeter(person) {
     return "Hello " + person.firstName + " " + person.lastName;
 }
 var user = new Student("Jane", "M.", "User");
-console.log( typeof user);
 document.body.innerHTML = greeter(user);
+//# sourceMappingURL=3-class.js.map

@@ -3,3 +3,4 @@ function greeter(person) {
 }
 var user = { firstName: "Jane", lastName: "Will" };
 document.body.innerHTML = greeter(user);
+//# sourceMappingURL=2-demo.js.map

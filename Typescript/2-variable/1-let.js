@@ -1,6 +1,3 @@
-/**
- * Created by wangweiwei on 16/11/29.
- */
 function f(input) {
     var a = 100;
     if (input) {
@@ -11,3 +8,4 @@ function f(input) {
 }
 console.log(f(true));
 console.log(f(false));
+//# sourceMappingURL=1-let.js.map

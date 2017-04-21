@@ -1,6 +1,3 @@
-/**
- * Created by wangweiwei on 16/11/29.
- */
 function city() {
     var getCity;
     if (true) {
@@ -12,3 +9,4 @@ function city() {
     return getCity;
 }
 console.log(city()());
+//# sourceMappingURL=3-city.js.map
